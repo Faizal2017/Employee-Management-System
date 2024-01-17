@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+
+button {
+  position: relative !important;
+  background: #fff !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 0.1rem !important;
+  padding: 0.75rem 1.5rem !important;
+  transition: 0.5s !important;
+}
+
+button:hover {
+  letter-spacing: 0.25rem !important;
+  background: var(--color) !important;
+  color: var(--color) !important;
+  box-shadow: 0 0 35px var(--color) !important;
+}
+
+button::before {
+  content: '' !important;
+  position: absolute !important;
+  inset: 2px !important;
+  background:  #433633 !important;
+}
+
+button span {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+button i {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+}
+
+button i::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -3.5px !important;
+  left: 80% !important;
+  width: 10px !important;
+  height: 5px !important;
+  border: 2px solid var(--color) !important;
+  background: #433633 !important;
+  transform: translateX(-50%) !important;
+  transition: 0.5s !important;
+}
+
+button:hover i::before {
+  left: 20% !important;
+  width: 20px !important;
+}
+
+button i::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -3.5px !important;
+  left: 20% !important;
+  width: 10px !important;
+  height: 5px !important;
+  border: 2px solid var(--color) !important;
+  background: #433633 !important;
+  transform: translateX(-50%) !important;
+  transition: 0.5s !important;
+}
+
+button:hover i::after {
+  left: 80% !important;
+  width: 20px !important;
+}
